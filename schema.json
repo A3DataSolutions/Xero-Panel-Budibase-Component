@@ -1,0 +1,39 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "xero-access-key-consumer",
+    "friendlyName": "xero-access-key-consumer",
+    "description": "A xero plugin to set access key in a datasource",
+    "icon": "Text",
+    "settings": [
+      {
+        "type": "text",
+        "key": "text",
+        "label": "Text"
+      },
+      {
+        "type": "event",
+        "key": "before_submit",
+        "label": "Before Submit",
+        "context": [
+          {
+            "label": "Token",
+            "key": "before_submit_value"
+          }
+        ]
+      },
+      {
+        "type": "event",
+        "key": "after_submit",
+        "label": "After Submit",
+        "context": [
+          {
+            "label": "Token",
+            "key": "after_submit_value"
+          }
+        ]
+      }
+    ]
+  }
+}
